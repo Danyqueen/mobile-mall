@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after
+{
+	margin:0;
+	padding:0;
+
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+
+	tap-highlight-color:transparent;
+	-webkit-tap-highlight-color:transparent;
+}
+body{
+	font-family: "Microsoft YaHei",sans-serif;
+	color: #333;
+}
+ul,ol{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+input,textarea{
+	border: none;
+	outline:none;
+
+	resize: none;
+
+	appearance:none;
+	-webkit-appearance:none;
+}
+
+.clearfix::before,
+.clearfix::after{
+	content:"";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+.m_t10{
+	margin-top: 10px;
+}
+.m_b10{
+	margin-bottom: 10px;
+}
+.m_l10{
+	margin-left: 10px;
+}
+.m_r10{
+	margin-right: 10px;
+}
+/* 使用精灵图的公用样式 */
+/* [class^="icon_"],[class*=" icon_"]{
+	background-size: 200px 200px;
+	background-image: url("../images/sprites.png");
+	background-repeat: no-repeat;
+} */
