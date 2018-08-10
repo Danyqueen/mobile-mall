@@ -11,7 +11,7 @@ var search=function(){
 
 	var bannerHeight=banner.offsetHeight;
 	window.onscroll=function(){
-	var scrollTop=document.body.scrollTop;
+	var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
 		
 		var opacity=0;
 		if (scrollTop<bannerHeight) {
